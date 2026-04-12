@@ -1,0 +1,14 @@
+[
+  { "key": "tackle", "name": "Tackle", "type": "Normal", "power": 40, "accuracy": 100, "priority": 0 },
+  { "key": "quick_attack", "name": "Quick Attack", "type": "Normal", "power": 40, "accuracy": 100, "priority": 1 },
+  { "key": "body_check", "name": "Body Check", "type": "Normal", "power": 50, "accuracy": 95, "priority": 0 },
+  { "key": "ember", "name": "Ember", "type": "Fire", "power": 40, "accuracy": 100, "priority": 0 },
+  { "key": "flare_bite", "name": "Flare Bite", "type": "Fire", "power": 55, "accuracy": 95, "priority": 0 },
+  { "key": "bubble_jet", "name": "Bubble Jet", "type": "Water", "power": 40, "accuracy": 100, "priority": 0 },
+  { "key": "water_pulse", "name": "Water Pulse", "type": "Water", "power": 50, "accuracy": 100, "priority": 0 },
+  { "key": "vine_whip", "name": "Vine Whip", "type": "Grass", "power": 45, "accuracy": 100, "priority": 0 },
+  { "key": "leaf_blade", "name": "Leaf Blade", "type": "Grass", "power": 55, "accuracy": 95, "priority": 0 },
+  { "key": "needle_jab", "name": "Needle Jab", "type": "Grass", "power": 45, "accuracy": 100, "priority": 0 },
+  { "key": "spark", "name": "Spark", "type": "Electric", "power": 45, "accuracy": 100, "priority": 0 },
+  { "key": "rock_toss", "name": "Rock Toss", "type": "Rock", "power": 50, "accuracy": 95, "priority": 0 }
+]

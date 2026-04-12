@@ -1,0 +1,97 @@
+[
+  {
+    "key": "capture_orb",
+    "name": "Scout Orb",
+    "description": "A basic capture orb for early wild BitPals. Best through the first routes.",
+    "price": 200,
+    "battleUsage": "capture",
+    "catchBonus": 1,
+    "aliases": ["capture orb", "basic orb", "starter orb"]
+  },
+  {
+    "key": "adept_orb",
+    "name": "Adept Orb",
+    "description": "A stronger capture orb tuned for mid-route BitPals around Lv.15 and above.",
+    "price": 650,
+    "battleUsage": "capture",
+    "catchBonus": 2,
+    "requiredBadge": "Tide Badge"
+  },
+  {
+    "key": "prime_orb",
+    "name": "Prime Orb",
+    "description": "A high-grade capture orb for tougher late-route and rare BitPals.",
+    "price": 1200,
+    "battleUsage": "capture",
+    "catchBonus": 3,
+    "requiredBadge": "Fault Badge"
+  },
+  {
+    "key": "apex_orb",
+    "name": "Apex Orb",
+    "description": "An endgame capture orb designed for rare BitPals in Apex-locked areas.",
+    "price": 2200,
+    "battleUsage": "capture",
+    "catchBonus": 4,
+    "requiredBadge": "Apex Crest"
+  },
+  {
+    "key": "potion",
+    "name": "Potion",
+    "description": "Restores 20 HP to your active monster.",
+    "price": 150,
+    "battleUsage": "heal",
+    "healAmount": 20
+  },
+  {
+    "key": "super_potion",
+    "name": "Super Potion",
+    "description": "Restores 50 HP to your active monster.",
+    "price": 450,
+    "battleUsage": "heal",
+    "healAmount": 50,
+    "requiredBadge": "Tide Badge"
+  },
+  {
+    "key": "hyper_potion",
+    "name": "Hyper Potion",
+    "description": "Restores 120 HP to your active monster.",
+    "price": 900,
+    "battleUsage": "heal",
+    "healAmount": 120,
+    "requiredBadge": "Volt Badge"
+  },
+  {
+    "key": "mega_potion",
+    "name": "Mega Potion",
+    "description": "Restores 200 HP to your active monster.",
+    "price": 1500,
+    "battleUsage": "heal",
+    "healAmount": 200,
+    "requiredBadge": "Storm Badge"
+  },
+  {
+    "key": "grove_stone",
+    "name": "Grove Stone",
+    "description": "A mossy catalyst used to evolve certain Grass-aligned BitPals.",
+    "price": 1800,
+    "fieldUsage": "evolution",
+    "requiredBadge": "Canopy Badge"
+  },
+  {
+    "key": "volt_module",
+    "name": "Volt Module",
+    "description": "A charged core used to trigger certain Electric evolutions.",
+    "price": 1800,
+    "fieldUsage": "evolution",
+    "requiredBadge": "Volt Badge"
+  },
+  {
+    "key": "terra_core",
+    "name": "Terra Core",
+    "description": "A dense mineral heart used to evolve certain Rock BitPals.",
+    "price": 1800,
+    "fieldUsage": "evolution",
+    "requiredBadge": "Fault Badge"
+  }
+]

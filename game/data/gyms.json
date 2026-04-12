@@ -1,0 +1,124 @@
+[
+  {
+    "key": "verdant_gym",
+    "areaKey": "starter_plains",
+    "name": "Verdant Gym",
+    "leader": "Leader Ivy",
+    "themeType": "Grass",
+    "badgeName": "Bloom Badge",
+    "rewardMoney": 900,
+    "team": [
+      { "species": "Leafy", "level": 6 },
+      { "species": "Thornlet", "level": 7 },
+      { "species": "Fernibble", "level": 8 }
+    ]
+  },
+  {
+    "key": "tidal_gym",
+    "areaKey": "tidebreak_coast",
+    "name": "Tidal Gym",
+    "leader": "Captain Marina",
+    "themeType": "Water",
+    "badgeName": "Tide Badge",
+    "rewardMoney": 1400,
+    "team": [
+      { "species": "Drizzlefin", "level": 10 },
+      { "species": "Tidepaw", "level": 11 },
+      { "species": "Ampfin", "level": 12 }
+    ]
+  },
+  {
+    "key": "ember_gym",
+    "areaKey": "cinder_ridge",
+    "name": "Ember Gym",
+    "leader": "Leader Ash",
+    "themeType": "Fire",
+    "badgeName": "Ember Badge",
+    "rewardMoney": 1900,
+    "team": [
+      { "species": "Cindercub", "level": 13 },
+      { "species": "Brimtail", "level": 14 },
+      { "species": "Coalimp", "level": 15 }
+    ]
+  },
+  {
+    "key": "dynamo_gym",
+    "areaKey": "voltspire_city",
+    "name": "Dynamo Gym",
+    "leader": "Director Nova",
+    "themeType": "Electric",
+    "badgeName": "Volt Badge",
+    "rewardMoney": 2450,
+    "team": [
+      { "species": "Zappit", "level": 16 },
+      { "species": "Staticub", "level": 17 },
+      { "species": "Voltrill", "level": 18 },
+      { "species": "Flinta", "level": 19 }
+    ]
+  },
+  {
+    "key": "quarry_gym",
+    "areaKey": "stonevault_canyon",
+    "name": "Quarry Gym",
+    "leader": "Foreman Flint",
+    "themeType": "Rock",
+    "badgeName": "Fault Badge",
+    "rewardMoney": 3050,
+    "team": [
+      { "species": "Graveling", "level": 20 },
+      { "species": "Bouldimp", "level": 21 },
+      { "species": "Quarryn", "level": 22 },
+      { "species": "Basalisk", "level": 23 }
+    ]
+  },
+  {
+    "key": "grove_gym",
+    "areaKey": "canopy_expanse",
+    "name": "Grove Gym",
+    "leader": "Warden Willow",
+    "themeType": "Grass",
+    "badgeName": "Canopy Badge",
+    "rewardMoney": 3700,
+    "team": [
+      { "species": "Mossprig", "level": 24 },
+      { "species": "Fernibble", "level": 25 },
+      { "species": "Bramblet", "level": 26 },
+      { "species": "Meadowlup", "level": 27 },
+      { "species": "Bloomunk", "level": 28 }
+    ]
+  },
+  {
+    "key": "tempest_gym",
+    "areaKey": "tempest_cape",
+    "name": "Tempest Gym",
+    "leader": "Admiral Surge",
+    "themeType": "Electric",
+    "badgeName": "Storm Badge",
+    "rewardMoney": 4450,
+    "team": [
+      { "species": "Voltrill", "level": 28 },
+      { "species": "Ampfin", "level": 29 },
+      { "species": "Currenttle", "level": 30 },
+      { "species": "Boltad", "level": 31 },
+      { "species": "Lumibbit", "level": 32 }
+    ]
+  },
+  {
+    "key": "elite_seven_citadel",
+    "areaKey": "elite_seven_summit",
+    "name": "Elite Seven Citadel",
+    "leader": "The Elite Seven",
+    "themeType": "Normal",
+    "badgeName": "Apex Crest",
+    "rewardMoney": 7000,
+    "team": [
+      { "species": "Brimtail", "level": 33 },
+      { "species": "Tidepaw", "level": 34 },
+      { "species": "Fernibble", "level": 35 },
+      { "species": "Voltrill", "level": 35 },
+      { "species": "Basalisk", "level": 36 },
+      { "species": "Flinta", "level": 37 },
+      { "species": "Geyserkit", "level": 38 }
+    ]
+  }
+]

@@ -1,0 +1,13 @@
+{
+  "name": "monster-bot",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "discord.js": "^14.14.1",
+    "mysql2": "^3.9.0",
+    "dotenv": "^16.4.0"
+  }
+}

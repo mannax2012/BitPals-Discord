@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Bug Catcher Milo",
+    "rewardMoney": 180,
+    "team": [
+      { "species": "Nibbloon", "level": 4 },
+      { "species": "Leafy", "level": 5 }
+    ]
+  },
+  {
+    "name": "Scout Rhea",
+    "rewardMoney": 220,
+    "team": [
+      { "species": "Buzzlet", "level": 5 },
+      { "species": "Flameling", "level": 5 }
+    ]
+  },
+  {
+    "name": "Hiker Moss",
+    "rewardMoney": 260,
+    "team": [
+      { "species": "Pebblit", "level": 6 },
+      { "species": "Thornlet", "level": 6 }
+    ]
+  }
+]

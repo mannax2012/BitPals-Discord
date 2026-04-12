@@ -1,0 +1,8 @@
+[
+  { "area": "Starter Plains", "species": "Nibbloon", "minLevel": 3, "maxLevel": 5, "weight": 28 },
+  { "area": "Starter Plains", "species": "Leafy", "minLevel": 4, "maxLevel": 6, "weight": 20 },
+  { "area": "Starter Plains", "species": "Flameling", "minLevel": 4, "maxLevel": 6, "weight": 14 },
+  { "area": "Starter Plains", "species": "Squirtie", "minLevel": 4, "maxLevel": 6, "weight": 14 },
+  { "area": "Starter Plains", "species": "Pebblit", "minLevel": 5, "maxLevel": 7, "weight": 12 },
+  { "area": "Starter Plains", "species": "Buzzlet", "minLevel": 5, "maxLevel": 7, "weight": 12 }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "name": "Flameling",
+    "types": ["Fire"],
+    "catchRate": 0.34,
+    "baseExp": 42,
+    "baseStats": { "hp": 45, "attack": 60, "defense": 43, "speed": 65 },
+    "learnset": [
+      { "level": 1, "move": "Tackle" },
+      { "level": 1, "move": "Ember" },
+      { "level": 7, "move": "Quick Attack" },
+      { "level": 10, "move": "Flare Bite" }
+    ]
+  },
+  {
+    "name": "Squirtie",
+    "types": ["Water"],
+    "catchRate": 0.34,
+    "baseExp": 40,
+    "baseStats": { "hp": 54, "attack": 50, "defense": 60, "speed": 48 },
+    "learnset": [
+      { "level": 1, "move": "Tackle" },
+      { "level": 1, "move": "Bubble Jet" },
+      { "level": 7, "move": "Water Pulse" },
+      { "level": 10, "move": "Quick Attack" }
+    ]
+  },
+  {
+    "name": "Leafy",
+    "types": ["Grass"],
+    "catchRate": 0.35,
+    "baseExp": 41,
+    "baseStats": { "hp": 50, "attack": 52, "defense": 52, "speed": 45 },
+    "learnset": [
+      { "level": 1, "move": "Tackle" },
+      { "level": 1, "move": "Vine Whip" },
+      { "level": 7, "move": "Quick Attack" },
+      { "level": 10, "move": "Leaf Blade" }
+    ]
+  },
+  {
+    "name": "Nibbloon",
+    "types": ["Normal"],
+    "catchRate": 0.5,
+    "baseExp": 31,
+    "baseStats": { "hp": 52, "attack": 48, "defense": 44, "speed": 58 },
+    "learnset": [
+      { "level": 1, "move": "Tackle" },
+      { "level": 4, "move": "Quick Attack" },
+      { "level": 8, "move": "Body Check" }
+    ]
+  },
+  {
+    "name": "Pebblit",
+    "types": ["Rock"],
+    "catchRate": 0.3,
+    "baseExp": 45,
+    "baseStats": { "hp": 56, "attack": 60, "defense": 64, "speed": 32 },
+    "learnset": [
+      { "level": 1, "move": "Tackle" },
+      { "level": 4, "move": "Rock Toss" },
+      { "level": 8, "move": "Body Check" }
+    ]
+  },
+  {
+    "name": "Buzzlet",
+    "types": ["Electric"],
+    "catchRate": 0.33,
+    "baseExp": 39,
+    "baseStats": { "hp": 42, "attack": 54, "defense": 40, "speed": 68 },
+    "learnset": [
+      { "level": 1, "move": "Tackle" },
+      { "level": 1, "move": "Spark" },
+      { "level": 7, "move": "Quick Attack" }
+    ]
+  },
+  {
+    "name": "Thornlet",
+    "types": ["Grass"],
+    "catchRate": 0.28,
+    "baseExp": 47,
+    "baseStats": { "hp": 58, "attack": 60, "defense": 50, "speed": 42 },
+    "learnset": [
+      { "level": 1, "move": "Tackle" },
+      { "level": 1, "move": "Needle Jab" },
+      { "level": 8, "move": "Leaf Blade" }
+    ]
+  }
+]
