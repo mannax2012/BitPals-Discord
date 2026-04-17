@@ -137,14 +137,15 @@ function disablePayloadComponents(components = []) {
 }
 
 function buildBattlePlaybackPayload(context, frame, index = 0, total = 1) {
-  const payload = buildBattleView(context);
-  const title = frame?.title || "Resolving turn...";
-  const detail = frame?.detail ? `\n${frame.detail}` : "";
-  const progress = total > 1 ? ` (${index + 1}/${total})` : "";
+  const payload = buildBattleView(context, {
+    playbackFrame: frame,
+    playbackIndex: index,
+    playbackTotal: total
+  });
 
   return {
     ...payload,
-    content: `**Resolving turn${progress}**\n${title}${detail}`,
+    content: "",
     components: disablePayloadComponents(payload.components)
   };
 }

@@ -165,6 +165,28 @@ function formatBattleItemLabel(item) {
   return `${item.name}${effectText} x${item.quantity}`;
 }
 
+function formatPlaybackText(frame, index = 0, total = 1) {
+  if (!frame) {
+    return null;
+  }
+
+  const title = frame.title || "Resolving turn...";
+  const detail = frame.detail ? `\n${frame.detail}` : "";
+  const progress = total > 1 ? ` (${index + 1}/${total})` : "";
+
+  return `**Resolving turn${progress}**\n${title}${detail}`;
+}
+
+function formatBattleLog(log = [], playback = null, size = 5) {
+  const recentLog = (log || []).slice(-size).map(line => `- ${line}`).join("\n");
+
+  if (!playback) {
+    return recentLog || "- No turns have been taken yet.";
+  }
+
+  return `${playback}\n\n${recentLog || "- No previous battle log yet."}`;
+}
+
 function canShowBattleItem(item, battleType, player = null) {
   if (!item || item.quantity < 1) {
     return false;
@@ -373,7 +395,7 @@ function buildTrainerBattleButtons(context) {
   ];
 }
 
-function buildTrainerBattleView(context) {
+function buildTrainerBattleView(context, options = {}) {
   const [leftSide, rightSide] = context.participants;
   const leftStatus = leftSide.side.forceSwitch
     ? "Must switch"
@@ -385,12 +407,16 @@ function buildTrainerBattleView(context) {
     : rightSide.side.selectedAction
       ? "Ready"
       : "Choosing";
-  const battleLog = (context.state.log || []).slice(-6).map(line => `- ${line}`).join("\n");
+  const playbackText = formatPlaybackText(options.playbackFrame, options.playbackIndex, options.playbackTotal);
+  const battleLog = formatBattleLog(context.state.log, playbackText, 6);
+  const description = playbackText
+    ? "Turn resolution is playing out inside this battle card. Controls are locked until the action finishes."
+    : `Turn ${context.state.turnNumber} is live. Both trainers lock in actions before the turn resolves.`;
 
   const embed = new EmbedBuilder()
     .setColor(0xf39c12)
     .setTitle(`Trainer Battle - ${context.title}`)
-    .setDescription(`Turn ${context.state.turnNumber} is live. Both trainers lock in actions before the turn resolves.`)
+    .setDescription(description)
     .addFields(
       {
         name: `${leftSide.name} - ${formatMonsterName(leftSide.activeMonster)} Lv.${leftSide.activeMonster.level}`,
@@ -418,26 +444,29 @@ function buildTrainerBattleView(context) {
   };
 }
 
-function buildBattleView(context) {
+function buildBattleView(context, options = {}) {
   if (context.isPvp) {
-    return buildTrainerBattleView(context);
+    return buildTrainerBattleView(context, options);
   }
 
   const { battle, state, activeMonster, enemyActive } = context;
   const color = getTypeColor(enemyActive?.types?.[0] || activeMonster?.types?.[0]);
-  const battleLog = (state.log || []).slice(-5).map(line => `- ${line}`).join("\n");
+  const playbackText = formatPlaybackText(options.playbackFrame, options.playbackIndex, options.playbackTotal);
+  const battleLog = formatBattleLog(state.log, playbackText, 5);
   const resultText = state.rewardSummary?.result === "lose"
     ? "Your party was rushed to the healing center. Use Back To Hub to keep going."
     : state.rewardSummary?.result === "win"
       ? "Battle complete. Use Back To Hub to continue your journey."
       : null;
-  const menuHint = resultText || (state.forceSwitch
-    ? "Choose a healthy monster to keep the battle going."
-    : state.currentMenu === "fight"
-      ? "Pick a move."
-      : state.currentMenu === "bag"
-        ? "Use an item."
-        : "Choose your next action.");
+  const menuHint = playbackText
+    ? "Controls are locked while this turn resolves."
+    : resultText || (state.forceSwitch
+      ? "Choose a healthy monster to keep the battle going."
+      : state.currentMenu === "fight"
+        ? "Pick a move."
+        : state.currentMenu === "bag"
+          ? "Use an item."
+          : "Choose your next action.");
   const description = !battle.active && state.rewardSummary?.result === "lose"
     ? "Defeat. Your usable BitPals are down, but the healing center has restored your party."
     : !battle.active && state.rewardSummary?.result === "win"
@@ -474,9 +503,6 @@ function buildBattleView(context) {
         inline: false
       }
     )
-    .setFooter({
-      text: `Session #${battle.id} • ${battle.active ? "In progress" : "Finished"}`
-    })
     .setFooter({
       text: `Session #${battle.id} | ${battle.active ? "In progress" : "Finished"}`
     });
